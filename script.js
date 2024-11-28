@@ -1,4 +1,3 @@
-// Dataset for job roles and details
 const jobRoles = [
   {
     "Job Role": "AI/Machine Learning",
