@@ -5,148 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bauchi Career Guidance System</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #e0f2e9; /* Light green background */
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            background-color: #2c6e49; /* Dark green */
-            padding: 10px;
-            justify-content: center;
-        }
-
-        nav ul li {
-            margin: 0 10px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-        }
-
-        nav ul li a:hover {
-            background-color: #3a7f55; /* Slightly lighter green */
-            border-radius: 5px;
-        }
-
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            max-height: 400px;
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
-
-        .image-container img {
-            width: 100%;
-            height: auto;
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-between;
-            margin: 0 auto;
-            padding: 20px;
-            box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
-        }
-
-        .column {
-            width: 30%;
-            padding: 0 10px;
-        }
-
-        h1, h2 {
-            text-align: center;
-            color: #2c6e49; /* Dark green */
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            font-size: 2.5em; /* Adjust font size for better readability */
-        }
-
-        h2 {
-            font-size: 2em;
-        }
-
-        label {
-            font-weight: bold;
-            color: #2c6e49; /* Dark green */
-        }
-
-        select,
-        table {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            border: 1px solid #5fba7d; /* Medium green */
-        }
-
-        table {
-            border-collapse: collapse;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        th,
-        td {
-            text-align: left;
-            padding: 10px;
-            border-bottom: 1px solid #5fba7d; /* Medium green */
-        }
-
-        th {
-            background-color: #2c6e49; /* Dark green */
-            color: #fff;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 14px;
-            color: #666;
-        }
-
-        .plot-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 40px;
-        }
-
-        .plot {
-            max-width: 500px;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .plot img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-
-        .plot-title {
-            text-align: center;
-            font-size: 18px;
-            margin-top: 10px;
-            color: #333;
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
@@ -160,11 +19,10 @@
     <div class="image-container">
         <img src="bauchi.jpg" alt="Bauchi State Image">
     </div>
-
+    
     <div class="container">
         <div class="column">
             <h1>Welcome to the Bauchi Career Guidance System</h1>
-
             <p>Bauchi State, located in northern Nigeria, is undergoing a rapid transformation. To support this growth, a comprehensive career guidance system is essential to bridge knowledge gaps, foster skill development, and empower individuals to make informed career choices.</p>
         </div>
         <div class="column">
@@ -198,29 +56,22 @@
         </div>
     </div>
 
-    <div class="plot-container">
-        <!-- Plot 1: Population vs. LGA -->
-        <div class="plot">
-            <img src="/kaggle/working/population_vs_LGA.png" alt="Population vs. LGA">
-            <div class="plot-title">Population (2022) of LGAs</div>
-        </div>
-
-        <!-- Plot 2: Unemployment vs. LGA -->
-        <div class="plot">
-            <img src="/kaggle/working/unemployment_vs_LGA.png" alt="Unemployment vs. LGA">
-            <div class="plot-title">Unemployment in LGAs</div>
-        </div>
-
-        <!-- Plot 3: Population/Unemployment ratio vs. LGA -->
-        <div class="plot">
-            <img src="/kaggle/working/population_unemployment_ratio.png" alt="Population/Unemployment Ratio vs. LGA">
-            <div class="plot-title">Population/Unemployment Ratio in LGAs</div>
-        </div>
-
-        <!-- Plot 4: Employment Age vs. Dependent Age Pie Chart -->
-        <div class="plot">
-            <img src="/kaggle/working/employment_vs_dependent_age_pie_chart.png" alt="Employment vs. Dependent Age">
-            <div class="plot-title">Comparison of Employment Age vs Dependent Age</div>
+    <!-- Displaying the plots -->
+    <div class="container">
+        <div class="column">
+            <h2>Population and Employment Analysis Plots</h2>
+            <div class="image-container">
+                <img src="population_vs_LGA.png" alt="Population vs. LGA">
+            </div>
+            <div class="image-container">
+                <img src="unemployment_vs_LGA.png" alt="Unemployment vs. LGA">
+            </div>
+            <div class="image-container">
+                <img src="population_unemployment_ratio.png" alt="Population/Unemployment Ratio vs. LGA">
+            </div>
+            <div class="image-container">
+                <img src="employment_vs_dependent_age_pie_chart.png" alt="Employment vs. Dependent Age Pie Chart">
+            </div>
         </div>
     </div>
 
