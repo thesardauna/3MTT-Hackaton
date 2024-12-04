@@ -40,8 +40,8 @@ nav ul li a:hover {
 }
 
 .full-screen-image-container img {
-    width: 100%;
-    height: auto; /* Maintains aspect ratio */
+    width: 80%;
+    height: 80; /* Maintains aspect ratio */
     object-fit: cover; /* Ensures image covers the container */
 }
 
