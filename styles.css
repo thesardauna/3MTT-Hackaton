@@ -1,167 +1,76 @@
-body {
-    font-family: 'Verdana', sans-serif;
-    background-color: #e0f2e9; /* Light green background */
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bauchi Career Guidance System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Verdana:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="job_role.html">Job Roles</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
 
-nav ul {
-    display: flex;
-    list-style: none;
-    background-color: #2c6e49; /* Dark green */
-    padding: 10px;
-    justify-content: center;
-}
+    <div class="image-container">
+        <img src="bauchi.jpg" alt="Bauchi State Image">
+    </div>
+    
+    <div class="container">
+        <div class="column">
+            <h1>Welcome to the Bauchi Career Guidance System</h1>
+            <p>Bauchi State, located in northern Nigeria, is undergoing a rapid transformation. To support this growth, a comprehensive career guidance system is essential to bridge knowledge gaps, foster skill development, and empower individuals to make informed career choices.</p>
+        </div>
+        <div class="column">
+            <h2>Why This System is Crucial for Bauchi:</h2>
+            <ol>
+                <li>
+                    <h3>Career Awareness and Guidance</h3>
+                    <ul>
+                        <li>Diverse Career Paths: Many individuals in Bauchi may be unaware of the diverse range of career opportunities available, especially in emerging fields like technology, data science, cybersecurity, and AI.</li>
+                        <li>Youth Empowerment: Young people, particularly students, often lack adequate career guidance. This system helps them explore different career paths, align their interests and skills with suitable opportunities, and make informed decisions about their future.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Skill Development and Employability</h3>
+                    <ul>
+                        <li>Skill Enhancement: The system emphasizes the importance of both soft skills and technical skills, guiding individuals to develop the necessary competencies for various professions.</li>
+                        <li>Addressing Skill Gaps: The system encourages individuals to pursue education or training programs that address skill gaps, making Bauchi's workforce more competitive in the evolving job market.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div class="column">
+            <h2>Why This System Matters for 3MTT Fellows:</h2>
+            <ul>
+                <li>Informed Decision-Making: The system provides foundational knowledge about various career paths, helping fellows make informed decisions about their education and future endeavors.</li>
+                <li>Skill Development: The system helps fellows identify the necessary skills for various roles, ensuring they are well-prepared for careers in technology and related fields.</li>
+                <li>Career Exploration: Fellows can explore different roles, understand their responsibilities, and see if they align with their interests and abilities.</li>
+                <li>Supporting Local Development: By contributing to a skilled and informed workforce, the system supports Bauchi's growth in the tech and education sectors.</li>
+                <li>Preparation for Future Opportunities: The system equips fellows with the necessary information to make informed decisions about their educational and professional paths, increasing their chances of success on platforms like 3MTT.</li>
+            </ul>
+        </div>
+    </div>
 
-nav ul li {
-    margin: 0 10px;
-}
+    <div class="container">
+        <div class="column">
+            <div class="image-container">
+                <img src="images/Comparison of employment age.png" alt="Comparison of Employment Age">
+            </div>
+            <div class="image-container">
+                <img src="images/bauchi-population-eda-images-3.jpg" alt="Bauchi Population EDA">
+            </div>
+        </div>
+    </div>
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-}
+    <div class="footer">
+        <p>&copy; 2024 Bauchi Career Guidance System. All rights reserved.</p>
+    </div>
 
-nav ul li a:hover {
-    background-color: #3a7f55; /* Slightly lighter green */
-    border-radius: 5px;
-}
-
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 600px;  /* Set a max width for a better professional look */
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #fff; /* White background for images */
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin: 0 auto;
-}
-
-.image-container img {
-    width: 100%; /* Ensure images are responsive */
-    max-width: 100%; /* Ensure no stretching beyond container */
-    height: auto;
-    border-radius: 5px; /* Smooth corners for images */
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.column {
-    width: 30%;
-    padding: 0 10px;
-}
-
-h1, h2 {
-    text-align: center;
-    color: #2c6e49; /* Dark green */
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-size: 2.5em;
-}
-
-h2 {
-    font-size: 2em;
-}
-
-label {
-    font-weight: bold;
-    color: #2c6e49;
-}
-
-select,
-table {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #5fba7d;
-}
-
-table {
-    border-collapse: collapse;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-th,
-td {
-    text-align: left;
-    padding: 10px;
-    border-bottom: 1px solid #5fba7d;
-}
-
-th {
-    background-color: #2c6e49;
-    color: #fff;
-}
-
-.details-container {
-    display: none;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 14px;
-    color: #666;
-}
-
-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        width: 90%;
-        padding: 10px;
-    }
-
-    .column {
-        width: 100%;
-        padding: 0;
-        margin-bottom: 20px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-}
-[_{{{CITATION{{{_1{](https://github.com/EleanorEllingson/web-dev/tree/b2f2a382e77a20fd6895677c8b8f402ac4bae352/7-bank-project%2F1-template-route%2Ftranslations%2FREADME.ko.md)
+    <script src="script.js"></script>
+</body>
+</html>
