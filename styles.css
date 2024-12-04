@@ -36,7 +36,6 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     overflow: hidden; /* Ensures the image does not overflow */
-    background-color: #fff; /* White background */
 }
 
 .full-screen-image-container img {
