@@ -31,7 +31,7 @@ nav ul li a:hover {
 
 .full-screen-image-container {
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
